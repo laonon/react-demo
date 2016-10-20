@@ -1,0 +1,143 @@
+.ant-input{
+  position: relative;
+  display: inline-block;
+  padding: 5px 9px;
+  width: 100%;
+  height: 32px;
+  cursor: text;
+  font-size: 12px;
+  line-height: 1.5;
+  color: #666;
+  background-color: #f5f5f6;
+  background-image: none;
+  border: none;
+  border-radius: 2px;
+  box-shadow: 0px 1px 0px 0px #e6e6e6;
+  transition: border 0.2s cubic-bezier(0.645, 0.045, 0.355, 1), background 0.2s cubic-bezier(0.645, 0.045, 0.355, 1), box-shadow 0.2s cubic-bezier(0.645, 0.045, 0.355, 1);
+}
+.ant-select-selection{
+  outline: none;
+  user-select: none;
+  box-sizing: border-box;
+  display: block;
+  background-color: #f5f5f6;
+  border-radius: 2px;
+  border: none;
+  box-shadow: 0px 1px 0px 0px #e6e6e6;
+  transition: all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
+}
+
+.clearfix { 
+  zoom: 1;
+  &::after{
+    content: "."; 
+    display: block; 
+    height: 0; 
+    clear: both; 
+    visibility: hidden; 
+  }
+}
+
+.layout-wrapper {
+  height: 100%;
+
+  /* 顶部导航 */
+  .layout-header {
+    .top-bar{
+      position: relative;
+      z-index: 10;
+      background: #404040;
+      height: 64px;
+    }
+    /*顶部导航*/
+    .logo, .global-nav {
+      float: left;
+    }
+
+    .user-info {
+      float: right;
+    }
+
+    .logo {
+      display: block;
+      width: 240px;
+      height: 50px;
+      line-height: 50px;
+      padding: 7px 20px;
+      font-size: 16px;
+      color: #999;
+      img {
+        vertical-align: middle;
+        margin-right: 5px;
+      }
+    }
+
+    .ant-menu {
+      line-height: 60px;
+      padding: 2px 10px;
+      font-size: 18px;
+      .ant-menu-inline .ant-menu-item, 
+      .ant-menu-vertical .ant-menu-item{
+        border-right: 0;
+      }
+    }
+    .ant-menu-vertical{
+      margin-top: 3px;
+      border-radius: 0;
+      .ant-menu-item{
+        padding: 0;
+        text-align: center;
+      }
+    }
+    
+    .breadcrumb {
+      margin: 20px;
+      color: #999;
+      .ant-breadcrumb{
+        display: inline-block;
+      }
+    }
+
+  }
+  .layout-content {
+    position: relative;
+    .ant-menu-horizontal{
+      margin: 0 0 20px 20px;
+      padding: 0;
+    }
+  }
+  .layout-container {
+    position: relative;
+    padding: 0 20px;
+    background: #fff;
+  }
+
+  /* 左侧导航 */
+  .layout-sider {
+    float: left;
+    width: 200px;
+    .ant-menu {
+      background-color: #f5f5f5;
+      border: 0;
+    }
+    .ant-menu .ant-menu-item {
+      border-right: 0;
+    }
+  }
+
+  /* 主体内容 */
+  .layout-right {
+    margin-left: 240px;
+  }
+
+  /* 底部 */
+  .layout-footer {
+    height: 64px;
+    line-height: 64px;
+    margin-top: 40px;
+    text-align: center;
+    font-size: 12px;
+    color: #999;
+    background: #f5f5f5;
+  }
+}

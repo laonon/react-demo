@@ -1,0 +1,57 @@
+{
+  "name": "React",
+  "version": "0.0.1",
+  "description": "数据管理平台",
+  "main": "index.js",
+  "scripts": {
+    "watch": "webpack-dev-server --w --hot --progress -colors",
+    "build": "NODE_ENV=production webpack --progress -colors",
+    "dev": "NODE_ENV=dev webpack-dev-server --hot --progress --colors"
+  },
+  "author": "wm",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git@git.lianjia.com:bigdata/plat.git"
+  },
+  "devDependencies": {
+    "animate.css": "^3.5.1",
+    "babel-core": "^6.2.1",
+    "babel-loader": "^6.2.0",
+    "babel-plugin-antd": "^0.4.0",
+    "babel-plugin-transform-runtime": "^6.1.18",
+    "babel-preset-es2015": "^6.1.18",
+    "babel-preset-react": "^6.5.0",
+    "babel-preset-stage-0": "^6.1.18",
+    "babel-runtime": "^6.2.0",
+    "css-loader": "^0.23.1",
+    "fastclick": "^1.0.6",
+    "file-loader": "^0.8.5",
+    "font-awesome": "^4.6.3",
+    "highcharts": "^4.2.5",
+    "html-webpack-plugin": "^2.22.0",
+    "imports-loader": "^0.6.5",
+    "less": "^2.3.1",
+    "less-loader": "^2.2.3",
+    "open-browser-webpack-plugin": "0.0.2",
+    "react-hot-loader": "^3.0.0-beta.6",
+    "style-loader": "^0.13.1",
+    "template-html-loader": "0.0.3",
+    "url-loader": "^0.5.7",
+    "webpack": "^1.12.9",
+    "webpack-dev-server": "^1.14.0",
+    "webpack-validator": "^2.2.9",
+    "whatwg-fetch": "^1.0.0"
+  },
+  "dependencies": {
+    "antd": "^2.0.0",
+    "react": "^15.0.2",
+    "react-dom": "^15.0.2",
+    "react-redux": "^4.4.5",
+    "react-router": "^2.4.1",
+    "react-templates": "^0.5.2",
+    "redux": "^3.5.2",
+    "redux-thunk": "^2.1.0",
+    "whatwg-fetch": "^1.0.0"
+  }
+}
